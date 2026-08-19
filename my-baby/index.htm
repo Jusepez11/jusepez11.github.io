@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff7f7">
+    <title>Una preguntita para ti 💌</title>
+    <link rel="icon" href="logo.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hearts" aria-hidden="true">
+        <span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span>
+    </div>
+
+    <main class="card" id="card">
+        <section id="question-screen" aria-labelledby="question">
+            <div class="envelope" aria-hidden="true">
+                <span class="envelope-heart">♥</span>
+            </div>
+            <p class="eyebrow">TENGO ALGO QUE PREGUNTARTE...</p>
+            <h1 id="question">¿Me amas?</h1>
+            <p class="subtitle" id="subtitle">Prometo que solo hay una respuesta correcta.</p>
+
+            <div class="actions" id="actions">
+                <button class="yes-button" id="yes-button" type="button">Sí, muchísimo 💗</button>
+                <button class="no-button" id="no-button" type="button">No</button>
+            </div>
+            <p class="hint" id="hint" aria-live="polite">Elige con el corazón.</p>
+        </section>
+
+        <section class="result hidden" id="yes-screen" aria-live="polite">
+            <div class="celebration" aria-hidden="true">💞</div>
+            <p class="eyebrow">¡LO SABÍA!</p>
+            <h1>Yo también te amo</h1>
+            <p class="subtitle">Más de lo que cabría en esta pequeña página.</p>
+            <div class="big-heart" aria-hidden="true">♥</div>
+            <button class="restart-button" type="button">Volver a empezar</button>
+        </section>
+
+        <section class="result hidden" id="sad-screen" aria-live="polite">
+            <div class="cat" aria-hidden="true">
+                <div class="cat-ear left-ear"></div>
+                <div class="cat-ear right-ear"></div>
+                <div class="cat-head">
+                    <span class="cat-eye left-eye"></span>
+                    <span class="cat-eye right-eye"></span>
+                    <span class="cat-nose"></span>
+                    <span class="cat-mouth"></span>
+                    <span class="tear left-tear"></span>
+                    <span class="tear right-tear"></span>
+                </div>
+            </div>
+            <h1>Está bien...</h1>
+            <p class="subtitle">Te dejaré en paz. Mi corazoncito y yo nos iremos por aquí.</p>
+            <button class="restart-button" type="button">Espera, quiero intentarlo otra vez</button>
+        </section>
+    </main>
+</body>
+</html>
